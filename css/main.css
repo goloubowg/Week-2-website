@@ -1,0 +1,245 @@
+/*selects everything*/
+*{
+  /*makes the font lato and sans serif?*/
+  font-family: "Lato", sans-serif;
+/*gives elements in the website very close to each other*/
+  margin: 0;
+  padding: 0;
+
+}
+nav{
+  margin: 0 1%;
+  /*spaces the nav bar similiar to the website*/
+  padding: 1% 5%;
+}
+/*selects all the divs in the nav section*/
+nav>div{
+  /*puts the search bar and title in the same block*/
+  display: inline-block;
+
+}
+nav>div>a{
+  color: #464646;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+.searchbar{
+  float: right;
+}
+nav input {
+  border: none;
+}
+hr{
+  border: 1px solid #c79852;
+  /*makes the border separate from the text by 3 percent and centers the line*/
+  margin: 3% auto;
+  /*how do i know how long it should be*/
+  width: 7%;
+}
+/*get buttom some extra padding from footer*/
+section{
+  padding: 0 0 50px 0;
+}
+header{
+/*makes the header in the have some margin in the header*/
+margin: 0 auto;
+/*centers the header*/
+  text-align: center;
+  width: 80%;
+
+}
+/*why did cant i call its class*/
+header div img{
+  /*rounds the corners of the image*/
+border-radius: 50%;
+height: 75px;
+	width: 75px;
+}
+header h1{
+  color: #242424;
+  font-family: "Lora",serif;
+  font-size: 60px;
+  /*makes letters closer together good when font is big*/
+  letter-spacing: -1px;
+  /*shortens the space between the two lines in the h1*/
+  line-height: 60px;
+  margin: 1% 0;
+}
+header h2
+{
+  color: #5f5f5f;
+  font-size: 20px;
+  font-weight: normal;
+  /*how to know that this is the margin*/
+  margin: 5% 0 3%;
+
+}
+header p{
+  font-size: 16px;
+  margin: 3% 0;
+}
+section> div{
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+
+}
+section>div p{
+  color: #565656;
+  font-size: 16px;
+  /*spread out the columns in the paragraph text*/
+  line-height: 30px;
+  padding: 0 15%;
+  margin: 3% 0;
+  /*need to make it go left*/
+  text-align: left;
+  }
+  .quote{
+    font-family: 'Petit Formal Script', cursive;
+    /*its bold*/
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+
+  }
+  /*VERY IMPORTANT because it will separate the images from the paragraph*/s
+  .images{
+    height: 450px;
+  }
+  /*selects the last 3 images need to format them*/
+  .images img{
+    /*puts them all to the left*/
+      float: left;
+
+  }
+  /*all images but only needs to affect the first image*/
+  .images img{
+    margin-left: 9%;
+
+  }
+  /*selects the two images on the right*/
+.images .img-right{
+  margin-left: 7px;
+}
+/*gives some space for the buttom 3rd pic*/
+.images img:last-child{
+  margin-top: 7px;
+
+}
+/*done with the pictures move onto the txt area*/
+section>footer{
+  /*idk if this does anything*/
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+
+}
+footer .likes{
+  /*changes bothe likes and heart to gray*/
+  color: #565656;
+
+}
+footer .fa-heart{
+  /*changes the color of the heart thing to red*/
+  color: #E04F4A;
+  /*why cant I put this in the .likes section*/
+  margin-bottom: 3%;
+}
+footer textarea{
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-color: #e5e5e5;
+  border-radius: 4px;
+  /*doesnt do much*/
+  box-shadow: insert 0 1px 1px rgba(0,0,0,.75) ;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.42857143;
+  /*cannot make the width the whole page*/
+  padding: 6px 12px;
+  /*need to make it wide*/
+  width: 100%;
+
+}
+/*now to edit the buttons*/
+.textfooter{
+  text-align: left;
+
+}
+/*make the buttons less buttony*/
+.textfooter button{
+  border: none;
+  background: white;
+  color: #565656;
+  font-size: 12px;
+  /*this padding will put the post comment button move to the left a little*/
+  padding: 0 5px 0 0;
+}
+.textfooter .rightbutton{
+  /*need to make post comment ot the right*/
+  float: right;
+  padding: 0;
+}
+.textfooter button:hover{
+  color: #5e5e5e;
+  /*when the mouse goes over these words it turns into a finger*/
+  cursor: pointer;
+  /*what happens when you click the buttons*/
+  transition: .3s all ease-in-out;
+  /*^^idk what all the properties do*/
+}
+body>footer{
+  /*makes the footer background blacker*/
+  background: #F8F9FD;
+  height: 200px;
+  padding: 0 20%;
+  /*this means that no other elements will mvoe into that position*/
+  position: relative;
+
+}
+.previousarticle, .nextarticle{
+  display: inline-block;
+  position: relative;
+  width: 50%;
+}
+.previousarticle{
+  left: 20%;
+  /*makes the next article div go actually inlne*/
+  position: absolute;
+
+}
+.previousbutton{
+  text-align: left;
+
+}
+.nextarticle{
+  position: absolute;
+  /*allows the article div moves to the right*/
+  right: 20%
+}
+/*puts the article/button more to the right*/
+.nextbutton{
+  text-align: right;
+}
+/*more positioning replicating the page*/
+.previousbutton, .nextbutton{
+  margin: 10% 0;
+
+}
+.previousbutton a,.nextbutton a{
+  color: #434345;
+  font-weight: bold;
+  margin: 3% 0;
+  text-decoration: none;
+}
+.previous-button p,
+.next-button p {
+	font-weight: normal;
+	margin: 3% 0;
+}
